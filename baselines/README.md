@@ -1,4 +1,5 @@
-# Evaluate Baselines on CNN/DM test set
+## Evaluate Baselines on test set
+Baselines include Random Word Picker, Random-3, and Lead-3
 ```bash
-python src/baselines/score_baselines.py
+python score_baselines.py
 ```
