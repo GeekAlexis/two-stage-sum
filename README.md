@@ -7,7 +7,7 @@ the ability to filter informative sentences
 (like extractive summarization) and the ability to
 paraphrase (like abstractive summarization). Our
 best model achieves a ROUGE-L F1 score of
-39.82, which outperforms the strong Lead-3 baseline and BERTSumEXT.
+39.82, which outperforms the strong Lead-3 baseline and BERTSumEXT. Qualitative analysis indicates better readability and factual accuracy.
 Further, fine-tuning both stages on our oracle as the gold references shows the potential to outperform BART.
 
 ## Results
