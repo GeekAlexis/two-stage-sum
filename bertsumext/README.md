@@ -1,11 +1,11 @@
-# Extraction with BertSumExt
+## Extraction with BertSumExt
 
-## Directory structure
+### Directory structure
 
 - PreSumm-dev: modified [PreSumm repo](https://github.com/nlpyang/PreSumm)
 - src: Several scripts to pre/postprocess the data, or calculate the metrics
 
-## Modification of BertSumExt
+### Modification of BertSumExt
 
 The uploaded version contains the code that we used for the final output,
 i.e., using 1.01 as the threshold.
@@ -16,7 +16,7 @@ To reproduce the results with output sentence length constraints,
 replace `(idx[j] >= len(sent_scores[0]) or sent_scores[0, idx[j]] < 1.01))` with `(len(_pred) == LEN)`,
 where `LEN` is the length constraint.
 
-## Get BertSumExt outputs
+### Generate BertSumExt outputs
 
 Download [bertext_cnndm_transformer](https://drive.google.com/file/d/1kKWoV0QCbeIuFt85beQgJ4v0lujaXobJ/view) and uncompress in the directory `PreSumm-dev/models`.
 
@@ -41,13 +41,13 @@ Run the following command in the bertsumext root directory to get the final resu
 python -m src.postprocess
 ```
 
-## Oracle (greedy ROUGE recall) generation
+### Generate Oracle (greedy ROUGE recall)
 
 ```bash
 python -m src.gen_stage_1
 ```
 
-## Metric calculation
+### Metric calculation
 
 Modify the file path in `src/calc_rouge_2` and run
 
